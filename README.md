@@ -1,5 +1,6 @@
 # SmartMethane
 Report “SmartMethane”
+
 1.Introduction
 
 1.1 ■ Problem
@@ -8,6 +9,7 @@ Report “SmartMethane”
 such as mining, chemical manufacturing, and oil and gas exploration. These
 materials can cause malfunctions and accidents, damage infrastructure and pose
 serious health and safety risks to workers and surrounding communities.
+ 
  SmartMethane - is a website that tries to address these issues by implementing
 deep learning techniques. By analyzing air samples, programm detect the presence
 of explosives like methane and give workers early warning before an explosion
@@ -71,15 +73,23 @@ and changing data types.
 1.3.1.2. Import libraries
 
 The code for deep learning model started by importing all necessary libraries:
+
 import numpy as np
+
 import pandas as pd
+
 import matplotlib.pyplot as plt
+
 import tensorflow as tf
+
 from sklearn.model_selection import train_test_split
+
 from keras.preprocessing import sequence
+
 from keras.models import Sequential
-from keras.layers import Dense, Dropout, Embedding, LSTM, Bidirectional, Conv1D,
-MaxPooling1D, Flatten
+
+from keras.layers import Dense, Dropout, Embedding, LSTM, Bidirectional, Conv1D, MaxPooling1D, Flatten
+
 from keras.utils import to_categorical
 
 1.3.1.3. Preprocessing data
@@ -107,6 +117,7 @@ features from time series data that can help detect and prevent methane emission
 
 Write function for evaluating methane concentration based on prediction of the
 model.
+
 Identify three categories: normal, middle and dangerous level of concentration
 methane in the air.
 
@@ -156,17 +167,20 @@ ytrain is a 1D shape tensor (number of samples) containing binary labels. The
 model is trained using the Adam optimizer and binary cross-entropy loss function,
 and the model performance is evaluated on a separate validation set consisting of
 xtest and ytest.
+
 RNN:
  A deep learning model that uses the Keras library to classify data using a
 combination of Long Short-Term Memory (LSTM) layers and dense layers. LSTM
 layers allow models to store information over long periods of time, making them well-suited 
 for time-series data and sequence modeling tasks. A dense layer at the end of
 the model is used to make final predictions based on the output of the LSTM layer.
+ 
  It can be used to predict and detect potential sources of methane emissions from
 industrial sites, landfills, or livestock, and provide real-time feedback to take
 preventive action. Additionally, deep learning models can be used to optimize energy
 consumption and reduce the carbon footprint of industrial processes, indirectly
 helping to avoid methane emissions.
+
 CNN:
  A deep learning model that uses the Keras library to classify data using a
 combination of Conv1D layers (1D convolutions) and dense layers. The Conv1D
@@ -175,6 +189,7 @@ data, and the MaxPooling1D layer is used to downsample the feature map, reducing
 model complexity and improving computational efficiency. The flattening layer is
 used to transform the 2D feature map produced by the Conv1D layer into his 1D
 feature vector. This is fed into the dense layer to make the final prediction.
+ 
  In the context of avoiding methane emissions, this model can be used in many
 ways. For example, it can be used to classify time-series data from sensors that
 monitor methane concentration in the atmosphere, enabling early detection and
@@ -185,6 +200,7 @@ prevention of methane leaks.
 3.1. ■ Results with tables, pictures and interesting numbers
 
 LSTM MODEL
+
 CNN MODEL
  Our models achieved a high level of accuracy in detecting methane emissions
 from time series data. The LSTM model achieved 99% accuracy and the CNN model
@@ -195,6 +211,7 @@ leaks early.
 4. Discussion
 
 4.1. ■ Critical review of results
+ 
  Our Smart Methane web application provides a user-friendly interface where
 users can easily enter data and obtain information about the concentration or
 amount of methane present. An algorithm developed for a web application involves
@@ -236,7 +253,7 @@ other data types such as video and image data to improve model accuracy.
 environmental challenges and highlights the importance of technological solutions in
 mitigating the impact of greenhouse gas emissions on our planet.
 
-5.References list:
+5. References list:
 
 1. SibElectro. (n.d.). Когда есть опасность взрыва? [When is there a risk of
 explosion?]. Retrieved from click
@@ -295,7 +312,6 @@ Authors: Aina Nurgaliyeva & Raziya Abutalipova
 GitHub: https://github.com/rosiettan/SmartMethane
 
 Google Colaboratory
-https://colab.research.google.com/drive/1ZySJBybNnubR_z
-HyzMFxcWVcmlMWx4Qw?usp=sharing
+https://colab.research.google.com/drive/1ZySJBybNnubR_zHyzMFxcWVcmlMWx4Qw?usp=sharing
 
 Video on YouTube:
