@@ -313,4 +313,5 @@ deploy it in imaging? Retrieved from click (This article explains what deep
 learning is and how it can be deployed for use in imaging).
 
 10. Vision Systems Design. (2019, June 27). Five steps for building and deploying a
-deep learning neural network. Retrieved from click (This article provides a stepby-step guide for building and deploying a deep learning neural network).
+deep learning neural network. Retrieved from click (This article provides a step
+by-step guide for building and deploying a deep learning neural network).
