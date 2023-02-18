@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Methane Detection</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="icon" type="image/x-icon" href="static/css/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+          integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://use.fontawesome.com/2a236ea976.js"></script>
+</head>
+<body>
+<header>
+{#    <a href="#" class="logo"><img src="static/css/logo.png" width="75" height="60"></a>#}
+    <a href="#" class="logo">Smart Methane</a>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#sec">About</a></li>
+        <li><a href="#sec2">Explore</a></li>
+        <li><a href="#sec3">Contact</a></li>
+    </ul>
+</header>
+<section>
+    <img src="static/css/pepel.png" id="stars" alt="" style="opacity: 50%">
+{#    <img src="static/css/stars.png" id="stars" alt="">#}
+    <img src="static/css/explosion.PNG" id="moon" alt="">
+    <img src="static/css/mountains_behind.png" id="mountains_behind" alt="">
+    <h2 id="text">Methane Emission Prevention</h2>
+    <a href="#sec2" id="btn">Explore</a>
+    <img src="static/css/mountains_front.png" id="mountains_front" alt="">
+</section>
+<div class="sec" id="sec">
+    <h2>What is SmartMethane?</h2>
+    <p> SmartMethane - is a website that tries to address these issues by implementing deep learning techniques.
+        By analyzing air samples, SmartMethane - can detect the presence of explosives like methane and give workers early warning
+        before an explosion occurs This early warning system helps prevent serious accidents and save lives SmartMethane - not only provides
+        an early warning system, but also helps mining and other industries comply with regulations on methane concentration and explosion protection.
+        SmartMethane monitors methane levels and provides real-time data to help  companies comply with safety regulations and avoid potential fines
+        and legal obligations.</p>
+    <br>
+    <img src="static/css/banner.jpg" width="700" height="203" alt="methane" style="margin-left: 335px">
+
+</div>
+
+<div class="sec2" id="sec2">
+    <h2>Predict the probability of methane explosion</h2>
+    <div class="inputRow">
+        <form action='/predict' method="POST" class="col s12">
+
+                <div class="inputBox">
+                    <input name="Country" id="first_name" type="text" class="validate" required="required">
+                    <span>Country</span>
+                </div>
+
+                <div class="inputBox">
+                    <input id="last_name" name="Sector" type="text" class="validate" required="required">
+                    <span>Sector</span>
+                </div>
+
+                <div class="inputBox">
+                    <input id="_name" name="Year" type="text" class="validate" required="required">
+                    <span>Year</span>
+                </div>
+
+            <div class="but">
+                <button type="submit" class="btn">Predict Probability</button>
+            </div>
+        </form>
+    </div>
+    <div class="concentration">
+        {{concentration}}<br>
+    </div>
+     <br>
+     <br>
+    <video controls autoplay style="margin-left: 20px;">
+        <source src="static/css/methane.mkv" type="video/mp4">
+    </video>
+    <h1 style="margin-left:20px; font-weight: lighter; color: #fff; font-size: 14px">Global Atmospheric Methane from Jan 1, 2018 through Nov 30, 2018</h1>
+    <br>
+</div>
+
+<div class="sec3" id="sec3">
+    <h2>Contact us</h2>
+        <div class="box">
+            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true" style="color: white"></i>
+            </div>
+            <div class="text" style="color: white">
+                <h3>Address</h3>
+                <p>Astana, Mangilik El, C1</p>
+            </div>
+        </div>
+
+         <div class="box">
+            <div class="icon"><i class="fa fa-phone" aria-hidden="true" style="color: white"></i>
+            </div>
+            <div class="text" style="color: white">
+                <h3>Phone</h3>
+                <p>777-666-55-44</p>
+            </div>
+        </div>
+
+         <div class="box">
+            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true" style="color: white"></i>
+            </div>
+            <div class="text" style="color: white">
+                <h3>Email</h3>
+                <p>rosiettan@mail.ru</p>
+            </div>
+        </div>
+
+    <h6 class="copyright">Copyright est.2023 &copy;SmartMethane. By Raziya Abutalipova & Aina Nurgaliyeva. All Rights Reserved.</h6>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+<script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4a9a5d9661e6bc08798072b690bacae7738aedb098a4371f2cf9333d6439124d&&width=100%&height=300&scroll=true&lang=ru_UA&sourceType=constructor"></script>
+
+<script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function (){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.05 + 'px';
+        mountains_front.style.top = 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+    })
+</script>
+
+</body>
+</html>
