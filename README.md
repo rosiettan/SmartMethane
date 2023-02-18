@@ -1,6 +1,15 @@
 # SmartMethane
 Report “SmartMethane”
 
+Authors: Aina Nurgaliyeva & Raziya Abutalipova
+
+GitHub: https://github.com/rosiettan/SmartMethane
+
+Google Colaboratory:
+https://colab.research.google.com/drive/1ZySJBybNnubR_zHyzMFxcWVcmlMWx4Qw?usp=sharing
+
+Video on YouTube: https://youtu.be/UbLPQ5otoyA
+
 1.Introduction
 
 1.1 ■ Problem
@@ -305,13 +314,3 @@ learning is and how it can be deployed for use in imaging).
 
 10. Vision Systems Design. (2019, June 27). Five steps for building and deploying a
 deep learning neural network. Retrieved from click (This article provides a stepby-step guide for building and deploying a deep learning neural network).
-
-
-Authors: Aina Nurgaliyeva & Raziya Abutalipova
-
-GitHub: https://github.com/rosiettan/SmartMethane
-
-Google Colaboratory
-https://colab.research.google.com/drive/1ZySJBybNnubR_zHyzMFxcWVcmlMWx4Qw?usp=sharing
-
-Video on YouTube: https://youtu.be/UbLPQ5otoyA
