@@ -314,4 +314,4 @@ GitHub: https://github.com/rosiettan/SmartMethane
 Google Colaboratory
 https://colab.research.google.com/drive/1ZySJBybNnubR_zHyzMFxcWVcmlMWx4Qw?usp=sharing
 
-Video on YouTube:
+Video on YouTube: https://youtu.be/UbLPQ5otoyA
