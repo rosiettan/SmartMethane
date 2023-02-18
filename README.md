@@ -262,7 +262,7 @@ other data types such as video and image data to improve model accuracy.
 environmental challenges and highlights the importance of technological solutions in
 mitigating the impact of greenhouse gas emissions on our planet.
 
-5. References list:
+5.References list:
 
 1. SibElectro. (n.d.). Когда есть опасность взрыва? [When is there a risk of
 explosion?]. Retrieved from click
