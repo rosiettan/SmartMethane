@@ -1,7 +1,7 @@
 # SmartMethane
 Report “SmartMethane”
 
-Authors: Aina Nurgaliyeva & Raziya Abutalipova
+Authors: Raziya Abutalipova & Aina Nurgaliyeva 
 
 GitHub: https://github.com/rosiettan/SmartMethane
 
